@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mandelbrot Set</title>
+
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+
+  <script type="module" src="./js/index.js" defer></script>
+</head>
+<body>
+  <main>
+    <h1 title="Ссылка на википедию"><a href="https://ru.wikipedia.org/wiki/%D0%9C%D0%BD%D0%BE%D0%B6%D0%B5%D1%81%D1%82%D0%B2%D0%BE_%D0%9C%D0%B0%D0%BD%D0%B4%D0%B5%D0%BB%D1%8C%D0%B1%D1%80%D0%BE%D1%82%D0%B0" target="_blank">Mandelbrot Set</a></h1>
+    <canvas id="canvas" width="500" height="500"></canvas>
+    <div class="control">
+      <label>
+        <span>zoom-x</span>
+        <input
+          type="range"
+          data-zoom-x-value
+          min="0.5"
+          max="7"
+          step="0.1"
+        >
+        <span data-zoom-x-out>0</span>
+      </label>
+
+      <label>
+        <span>zoom-y</span>
+        <input
+          type="range"
+          data-zoom-y-value
+          min="0.5"
+          max="7"
+          step="0.1"
+        >
+        <span data-zoom-y-out>0</span>
+      </label>
+
+      <label>
+        <span>iteration</span>
+        <input
+          type="range"
+          data-maxiteration-value
+          min="10"
+          max="1000"
+          step="10"
+        >
+        <span data-maxiteration-out>0</span>
+      </label>
+
+      <label>
+        <span>bound</span>
+        <input
+          type="range"
+          data-bound-value
+          min="0"
+          max="50"
+          step="1"
+        >
+        <span data-bound-out>0</span>
+      </label>
+    </div>
+  </main>
+</body>
+</html>
