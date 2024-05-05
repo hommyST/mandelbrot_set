@@ -26,7 +26,10 @@ img {
   max-width: 100%;
 }
 
-
+small {
+  color: #ff9800;
+  font-size: 0.8em;
+}
 
 
 main {
